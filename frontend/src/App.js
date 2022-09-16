@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Fragment } from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/header/header.component';
 import Dashboard from './routes/dashboard/dashboard.route';
 import Register from './routes/register/register.route';
@@ -18,6 +20,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <ToastContainer />
     </Fragment>
   );
 }
