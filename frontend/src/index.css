@@ -11,6 +11,16 @@ body {
   height: 100vh;
 }
 
+#outer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+}
+.inner {
+  display: inline-block;
+}
+
 a {
   text-decoration: none;
   color: #000;

@@ -8,12 +8,12 @@ import Button from '../button/button.component';
 import Spinner from '../spinner/spinner.component';
 import { loginUser, reset } from '../../features/auth/auth-slice';
 
-const formFields = {
-  email: '',
-  password: '',
-};
-
 const LoginForm = () => {
+  const formFields = {
+    email: '',
+    password: '',
+  };
+
   const [formData, setFormData] = useState(formFields);
 
   const { email, password } = formData;
